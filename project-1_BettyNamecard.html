@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Betty's Business card</title>
+        <style type="text/css">
+            *{
+                /* border:solid 1px; */ 
+                font-family:Microsoft JhengHei;
+                position: relative;
+            }
+            html,body{
+                width:100%;height:100%;
+                padding:0px;margin:0px;
+            }
+            body{
+                background-color:#d1d1d1;
+                box-sizing:border-box;
+                overflow:hidden;
+            }
+            .namecard{
+                width:400px;height:230px;
+                padding:20px;
+                margin-left:auto;
+                margin-right:auto; 
+                margin-top:150px;
+                background-color:#fff;
+
+                letter-spacing:1px;
+                font-weight: 100;
+
+                color:rgba(0,0,0,0.7);
+
+                overflow:hidden;
+                border: solid 1px rgba(0,0,0,0.15);
+                border-radius:6px;
+
+                X Y 模糊程度 外框內縮
+                box-shadow: 0px 20px 20px -10px rgba(0,0,0,0.6);
+            }
+            .namecard h2{
+                font-size:28px;
+                font-weight: 700;
+            }
+            .namecard h2 span{
+                font-size:12px;
+            }
+            .namecard h5{
+                color:#23b4aa;
+                font-weight: 500;
+            }
+            .namecard p{
+                top:12px;
+                font-size:12px;
+                line-height:28px;
+                font-weight: 400;
+            }
+            .circle{
+                /*width:400px;height:300px;*/
+
+                position:absolute;
+            }
+            .circle1{
+                width: 0px;height: 0px;
+                border-style: solid;
+                border-width: 0px 350px 470px 530px;
+                border-color: transparent transparent #dceff5 transparent ;
+                top:12px;
+                right:-400px;
+            }
+            .circle2{
+                width:30px;height:30px;
+                border-radius:100%;
+                right:105px;
+                top:145px;
+                background:linear-gradient(45deg,#72ccd4,#fff 80%)
+                /*border:solid 3px #f24;*/
+            }
+            .circle3{
+                width:250px;height:30px;
+                border-radius:24px;
+                right:100px;
+                top:250px;
+                transform:rotate(-45deg);
+                background:linear-gradient(90deg,#fff 30%,#72ccd4 100%)
+            }
+            .circle4{
+                width:180px;height:30px;
+                border-radius:24px;
+                right:-80px;
+                top:40px;
+                transform:rotate(-45deg);
+                background:linear-gradient(90deg,#fff 15%,#72ccd4 100%)
+            }
+            .circle5{
+                width:180px;height:30px;
+                border-radius:24px;
+                right:10px;
+                top:10px;
+                transform:rotate(-45deg);
+                background:linear-gradient(90deg,#fff 15%,#72ccd4 100%)
+            }
+            .circle6{
+                width:180px;height:22px;
+                border-radius:24px;
+                right:-52px;
+                top:-10px;
+                transform:rotate(-45deg);
+                background:linear-gradient(90deg,#fff 15%,#72ccd4 150%)
+            }
+            .page_title{
+                text-align: center;
+                color:#555;
+                font-weight: 500;
+            }
+            .mark{
+                font-size:300px;
+                position:absolute;
+                top:-200px;
+                font-weight:100;
+                color:rgba(0,0,0,0.025);
+            }
+            .button{
+                font-size:14px;
+                text-align: center; 
+                color:#1948e3;
+                border:solid 1px #72ccd4 ;
+                background-color:#fff493 ;
+                display:inline-block;
+                padding:10px;
+                border-radius:6px;
+                position: absolute;
+                top:220px;right:560px;
+            }
+
+        </style>
+    </head>
+    <body>
+        <div class="mark">Betty <br>Tsou</div>
+        <div class="namecard">
+            <h2>鄒宛儒
+            <span>Betty Tsou</span>
+            </h2>
+       
+        <h5>Design Animation Program</h5>
+        <!--<hr class="hr">-->
+        <p class="p">Email:abc9876@gmail.com<br>Phone:0911222333<br>Address:Taipei,Taiwan</p>
+        <div class="circle circle1"></div>
+        <div class="circle circle2"></div>
+        <div class="circle circle3"></div>
+        <div class="circle circle4"></div>
+        <div class="circle circle5"></div>
+        <div class="circle circle6"></div>
+        </div>
+        <h3 class="page_title">Betty's Business card</h3>
+        <!--<div class="button">Portfolio</div>-->
+        <button type="button" class="button"  onclick="window.open('https://github.com/BettyTsou?tab=projects&type=beta', '_blank')">GitHub</button>
+        
+
+    </body>
+</html>
